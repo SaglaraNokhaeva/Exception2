@@ -25,7 +25,7 @@ public class lesson2 {
 
     public static String[][] readFile(String fileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
-        int fileSize = 1;
+        int fileSize = 0;
         String checked = reader.readLine();
         while (checked != null) {
             fileSize++;
@@ -38,7 +38,7 @@ public class lesson2 {
         String[][] result = new String[fileSize][2];
         for (int i = 0; i < fileSize; i++) {
             String[] temp = reader.readLine().split("=");
-            if (temp[1] != "?") {
+            if (!temp[1].equals("?")) {
                 try {
                     int a = Integer.parseInt(temp[1]);
                 } catch (Exception e) {
