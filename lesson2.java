@@ -22,8 +22,17 @@ public class lesson2 {
 
     public static String [][] readFile (String fileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
-        String CurrentString
-        while ()
+        int fileSize = 1;
+        String checked = reader.readLine();
+        while (checked!=null){
+            fileSize++;
+            checked = reader.readLine();
+        }
+        reader.close();
+
+
+        reader = new BufferedReader(new FileReader(fileName));
+        
     }
 }
 
