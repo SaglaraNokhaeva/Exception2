@@ -15,7 +15,12 @@ import java.io.*;
  */
 public class lesson2 {
     public static void main(String[] args) {
-
+        try {
+            PrintFile(readFile("E:\\Учёба\\Exceptions\\Exception2\\text.txt"), "E:\\Учёба\\Exceptions\\Exception2\\text.txt");
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public static String[][] readFile(String fileName) throws IOException {
