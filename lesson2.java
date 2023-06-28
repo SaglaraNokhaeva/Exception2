@@ -32,7 +32,10 @@ public class lesson2 {
 
 
         reader = new BufferedReader(new FileReader(fileName));
-        
+        String [][] result = new String[fileSize][2];
+        for (int i = 0; i < fileSize; i++) {
+            
+        }
     }
 }
 
