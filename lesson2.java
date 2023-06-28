@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 /*Запишите в файл следующие строки:
 Анна=4
 Елена=5
@@ -13,7 +17,13 @@
  */
 public class lesson2 {
     public static void main (String [] args){
-       
+
+    }
+
+    public static String [][] readFile (String fileName) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        String CurrentString
+        while ()
     }
 }
 
